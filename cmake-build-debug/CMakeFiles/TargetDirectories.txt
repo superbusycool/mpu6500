@@ -1,0 +1,3 @@
+C:/HNU_Framework/A_6500/A_6500/cmake-build-debug/CMakeFiles/A_6500.elf.dir
+C:/HNU_Framework/A_6500/A_6500/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/HNU_Framework/A_6500/A_6500/cmake-build-debug/CMakeFiles/rebuild_cache.dir
