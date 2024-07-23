@@ -61,6 +61,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/A_6500.elf.dir/IST8310/ist8310.c.obj.d"
   "CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj"
   "CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj.d"
+  "CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj"
+  "CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj.d"
   "CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj"
   "CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj.d"
 )

@@ -29,6 +29,7 @@
 					<Add option="-DSTM32F427xx"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/Core/Inc"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/Data_Process"/>
+					<Add directory="C:/HNU_Framework/A_6500/A_6500/Mahony_Process"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/filter"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/IST8310"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/MPU6500"/>
@@ -62,6 +63,7 @@
 					<Add option="-DSTM32F427xx"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/Core/Inc"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/Data_Process"/>
+					<Add directory="C:/HNU_Framework/A_6500/A_6500/Mahony_Process"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/filter"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/IST8310"/>
 					<Add directory="C:/HNU_Framework/A_6500/A_6500/MPU6500"/>
@@ -426,6 +428,12 @@
 			<Option target="A_6500.elf"/>
 		</Unit>
 		<Unit filename="C:/HNU_Framework/A_6500/A_6500/MPU6500/mpu6500_reg.h">
+			<Option target="A_6500.elf"/>
+		</Unit>
+		<Unit filename="C:/HNU_Framework/A_6500/A_6500/Mahony_Process/mahony.c">
+			<Option target="A_6500.elf"/>
+		</Unit>
+		<Unit filename="C:/HNU_Framework/A_6500/A_6500/Mahony_Process/mahony.h">
 			<Option target="A_6500.elf"/>
 		</Unit>
 		<Unit filename="C:/HNU_Framework/A_6500/A_6500/STM32F427IIHX_FLASH.ld">

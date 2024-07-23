@@ -487,10 +487,24 @@ CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.s"
 	D:\stm32environment\arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\HNU_Framework\A_6500\A_6500\MPU6500\mpu6500.c -o CMakeFiles\A_6500.elf.dir\MPU6500\mpu6500.c.s
 
+CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj: CMakeFiles/A_6500.elf.dir/flags.make
+CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj: C:/HNU_Framework/A_6500/A_6500/Mahony_Process/mahony.c
+CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj: CMakeFiles/A_6500.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\HNU_Framework\A_6500\A_6500\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj"
+	D:\stm32environment\arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj -MF CMakeFiles\A_6500.elf.dir\Mahony_Process\mahony.c.obj.d -o CMakeFiles\A_6500.elf.dir\Mahony_Process\mahony.c.obj -c C:\HNU_Framework\A_6500\A_6500\Mahony_Process\mahony.c
+
+CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.i"
+	D:\stm32environment\arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\HNU_Framework\A_6500\A_6500\Mahony_Process\mahony.c > CMakeFiles\A_6500.elf.dir\Mahony_Process\mahony.c.i
+
+CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.s"
+	D:\stm32environment\arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\HNU_Framework\A_6500\A_6500\Mahony_Process\mahony.c -o CMakeFiles\A_6500.elf.dir\Mahony_Process\mahony.c.s
+
 CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj: CMakeFiles/A_6500.elf.dir/flags.make
 CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj: C:/HNU_Framework/A_6500/A_6500/filter/kalman.c
 CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj: CMakeFiles/A_6500.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\HNU_Framework\A_6500\A_6500\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\HNU_Framework\A_6500\A_6500\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj"
 	D:\stm32environment\arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj -MF CMakeFiles\A_6500.elf.dir\filter\kalman.c.obj.d -o CMakeFiles\A_6500.elf.dir\filter\kalman.c.obj -c C:\HNU_Framework\A_6500\A_6500\filter\kalman.c
 
 CMakeFiles/A_6500.elf.dir/filter/kalman.c.i: cmake_force
@@ -533,6 +547,7 @@ A_6500_elf_OBJECTS = \
 "CMakeFiles/A_6500.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" \
 "CMakeFiles/A_6500.elf.dir/IST8310/ist8310.c.obj" \
 "CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj" \
+"CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj" \
 "CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj"
 
 # External object files for target A_6500.elf
@@ -568,10 +583,11 @@ A_6500.elf: CMakeFiles/A_6500.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 A_6500.elf: CMakeFiles/A_6500.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 A_6500.elf: CMakeFiles/A_6500.elf.dir/IST8310/ist8310.c.obj
 A_6500.elf: CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj
+A_6500.elf: CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj
 A_6500.elf: CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj
 A_6500.elf: CMakeFiles/A_6500.elf.dir/build.make
 A_6500.elf: CMakeFiles/A_6500.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\HNU_Framework\A_6500\A_6500\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking C executable A_6500.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\HNU_Framework\A_6500\A_6500\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable A_6500.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\A_6500.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/HNU_Framework/A_6500/A_6500/cmake-build-debug/A_6500.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/HNU_Framework/A_6500/A_6500/cmake-build-debug/A_6500.bin"

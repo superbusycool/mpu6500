@@ -8,6 +8,7 @@
 #include "string.h"
 #include "ist8310.h"
 #include "process.h"
+#include "mahony.h"//两种姿态解算可选择
 
 static uint8_t        tx, rx;				//定义读写变量
 static uint8_t        tx_buff[14] = { 0xff };			//MPU6500数据变量（加速度，温度，角度）
@@ -110,6 +111,9 @@ void mpu_get_data()
     imu.wz   = mpu_data.gz / 16.384f / 57.3f;
 
     IMUupdate1(imu.wx,imu.wy,imu.wz,mpu_data.ax,mpu_data.ay,mpu_data.az,mpu_data.mx,mpu_data.my,mpu_data.mz);
+//    IMUThread();//Mahony
+
+
 }
 //获取MPU6500的偏移量数据
 void mpu_offset_call(void)

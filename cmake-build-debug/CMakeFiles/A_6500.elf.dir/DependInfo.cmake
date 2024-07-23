@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/HNU_Framework/A_6500/A_6500/Core/Inc"
   "C:/HNU_Framework/A_6500/A_6500/Data_Process"
+  "C:/HNU_Framework/A_6500/A_6500/Mahony_Process"
   "C:/HNU_Framework/A_6500/A_6500/filter"
   "C:/HNU_Framework/A_6500/A_6500/IST8310"
   "C:/HNU_Framework/A_6500/A_6500/MPU6500"
@@ -63,6 +64,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/HNU_Framework/A_6500/A_6500/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" "CMakeFiles/A_6500.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" "gcc" "CMakeFiles/A_6500.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d"
   "C:/HNU_Framework/A_6500/A_6500/IST8310/ist8310.c" "CMakeFiles/A_6500.elf.dir/IST8310/ist8310.c.obj" "gcc" "CMakeFiles/A_6500.elf.dir/IST8310/ist8310.c.obj.d"
   "C:/HNU_Framework/A_6500/A_6500/MPU6500/mpu6500.c" "CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj" "gcc" "CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj.d"
+  "C:/HNU_Framework/A_6500/A_6500/Mahony_Process/mahony.c" "CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj" "gcc" "CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj.d"
   "C:/HNU_Framework/A_6500/A_6500/filter/kalman.c" "CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj" "gcc" "CMakeFiles/A_6500.elf.dir/filter/kalman.c.obj.d"
   )
 

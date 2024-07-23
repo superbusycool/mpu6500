@@ -35,9 +35,13 @@ void IMUupdate1(float gx, float gy, float gz, float ax, float ay, float az, floa
     float hx, hy, hz, bx, bz;
     float wx, wy, wz;
     float  halfT;
+
+
     now_update  = HAL_GetTick(); //ms
     halfT       = ((float)(now_update - last_update) / 2000.0f);
     last_update = now_update;
+
+
     // 测量正常化,把加计的三维向量转成单位向量。
     norm = sqrt(ax*ax + ay*ay + az*az);
     ax = ax / norm;                   //单位化
@@ -95,10 +99,6 @@ void IMUupdate1(float gx, float gy, float gz, float ax, float ay, float az, floa
         ezInt = ezInt + ez*Ki*halfT;
 
         // 调整后的陀螺仪测量,使用叉积误差来进行比例-积分（PI）修正陀螺仪的零偏。将修正量乘以比例增益Kp，并加上之前计算的积分误差exInt、eyInt和ezInt。
-//        gx = gx + Kp*ex + exInt;
-//        gy = gy + Kp*ey + eyInt;
-//        gz = gz + Kp*ez + ezInt;
-
         gx = gx + Kp*ex + exInt;
         gy = gy + Kp*ey + eyInt;
         gz = gz + Kp*ez + ezInt;
@@ -119,10 +119,10 @@ void IMUupdate1(float gx, float gy, float gz, float ax, float ay, float az, floa
 
     imu.pit  = asin(2 * q2 * q3 + 2 * q0* q1)* 57.3; // pitch ,转换为度数
     imu.rol = atan2(-2 * q1 * q3 + 2 * q0 * q2, q0*q0-q1*q1-q2*q2+q3*q3)* 57.3; // rollv
-    imu.yaw = atan2(2*(q1*q2 - q0*q3),q0*q0-q1*q1+q2*q2-q3*q3) * 57.3;   //偏移太大，等我找一个好用的
+    imu.yaw = atan2(2*(q1*q2 - q0*q3),q0*q0-q1*q1+q2*q2-q3*q3) * 57.3;
 
     imu.pit0 =  KalmanFilter(imu.pit,10.0,0.05);
     imu.rol0 =  KalmanFilter(imu.rol,10.0,0.05);
-    imu.yaw0 =  KalmanFilter(imu.yaw,10.0,0.05);
+    imu.yaw0 =  KalmanFilter(imu.yaw,10.0,0.05);//最简单的一阶卡尔曼滤波,Q,R值没调的很好
 
 }

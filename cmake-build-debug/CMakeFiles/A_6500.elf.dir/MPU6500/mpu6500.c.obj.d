@@ -69,4 +69,5 @@ CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.obj: \
  d:\stm32environment\arm\arm-none-eabi\include\sys\sched.h \
  d:\stm32environment\arm\arm-none-eabi\include\machine\types.h \
  d:\stm32environment\arm\arm-none-eabi\include\sys\stdio.h \
- C:\HNU_Framework\A_6500\A_6500\Data_Process/process.h
+ C:\HNU_Framework\A_6500\A_6500\Data_Process/process.h \
+ C:\HNU_Framework\A_6500\A_6500\Mahony_Process/mahony.h

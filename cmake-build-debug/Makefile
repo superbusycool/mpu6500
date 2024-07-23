@@ -832,6 +832,30 @@ MPU6500/mpu6500.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\A_6500.elf.dir\build.make CMakeFiles/A_6500.elf.dir/MPU6500/mpu6500.c.s
 .PHONY : MPU6500/mpu6500.c.s
 
+Mahony_Process/mahony.obj: Mahony_Process/mahony.c.obj
+.PHONY : Mahony_Process/mahony.obj
+
+# target to build an object file
+Mahony_Process/mahony.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A_6500.elf.dir\build.make CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.obj
+.PHONY : Mahony_Process/mahony.c.obj
+
+Mahony_Process/mahony.i: Mahony_Process/mahony.c.i
+.PHONY : Mahony_Process/mahony.i
+
+# target to preprocess a source file
+Mahony_Process/mahony.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A_6500.elf.dir\build.make CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.i
+.PHONY : Mahony_Process/mahony.c.i
+
+Mahony_Process/mahony.s: Mahony_Process/mahony.c.s
+.PHONY : Mahony_Process/mahony.s
+
+# target to generate assembly for a file
+Mahony_Process/mahony.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\A_6500.elf.dir\build.make CMakeFiles/A_6500.elf.dir/Mahony_Process/mahony.c.s
+.PHONY : Mahony_Process/mahony.c.s
+
 filter/kalman.obj: filter/kalman.c.obj
 .PHONY : filter/kalman.obj
 
@@ -953,6 +977,9 @@ help:
 	@echo ... MPU6500/mpu6500.obj
 	@echo ... MPU6500/mpu6500.i
 	@echo ... MPU6500/mpu6500.s
+	@echo ... Mahony_Process/mahony.obj
+	@echo ... Mahony_Process/mahony.i
+	@echo ... Mahony_Process/mahony.s
 	@echo ... filter/kalman.obj
 	@echo ... filter/kalman.i
 	@echo ... filter/kalman.s
